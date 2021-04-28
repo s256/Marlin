@@ -681,13 +681,13 @@
 #endif
 
 // Mechanical endstop with COM to ground and NC to Signal uses "false" here (most common setup).
-#define X_MIN_ENDSTOP_INVERTING true // Set to true to invert the logic of the endstop.
-#define Y_MIN_ENDSTOP_INVERTING true // Set to true to invert the logic of the endstop.
+#define X_MIN_ENDSTOP_INVERTING true  // Set to true to invert the logic of the endstop.
+#define Y_MIN_ENDSTOP_INVERTING true  // Set to true to invert the logic of the endstop.
 #define Z_MIN_ENDSTOP_INVERTING false // Set to true to invert the logic of the endstop.
 
-#define X_MAX_ENDSTOP_INVERTING false      // Set to true to invert the logic of the endstop.
-#define Y_MAX_ENDSTOP_INVERTING false      // Set to true to invert the logic of the endstop.
-#define Z_MAX_ENDSTOP_INVERTING false      // Set to true to invert the logic of the endstop.
+#define X_MAX_ENDSTOP_INVERTING false       // Set to true to invert the logic of the endstop.
+#define Y_MAX_ENDSTOP_INVERTING false       // Set to true to invert the logic of the endstop.
+#define Z_MAX_ENDSTOP_INVERTING false       // Set to true to invert the logic of the endstop.
 #define Z_MIN_PROBE_ENDSTOP_INVERTING false // Set to true to invert the logic of the probe.
 
 /**
@@ -929,7 +929,6 @@
  *   (e.g., an inductive probe or a nozzle-based probe-switch.)
  */
 //#define FIX_MOUNTED_PROBE
-
 
 /**
  * Use the nozzle as the probe, as with a conductive
@@ -1285,16 +1284,16 @@
  *   With an LCD controller the process is guided step-by-step.
  */
 //#define AUTO_BED_LEVELING_3POINT
-#define AUTO_BED_LEVELING_LINEAR
+//#define AUTO_BED_LEVELING_LINEAR
 //#define AUTO_BED_LEVELING_BILINEAR
-//#define AUTO_BED_LEVELING_UBL
+#define AUTO_BED_LEVELING_UBL
 //#define MESH_BED_LEVELING
 
 /**
  * Normally G28 leaves leveling disabled on completion. Enable
  * this option to have G28 restore the prior leveling state.
  */
-//#define RESTORE_LEVELING_AFTER_G28
+#define RESTORE_LEVELING_AFTER_G28
 
 /**
  * Enable detailed logging of G28, G29, M48, etc.
