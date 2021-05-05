@@ -455,7 +455,7 @@
 //#define TEMP_SENSOR_1_AS_REDUNDANT
 #define MAX_REDUNDANT_TEMP_SENSOR_DIFF 10
 
-#define TEMP_RESIDENCY_TIME 10 // (seconds) Time to wait for hotend to "settle" in M109
+#define TEMP_RESIDENCY_TIME 20 // (seconds) Time to wait for hotend to "settle" in M109
 #define TEMP_WINDOW 1          // (°C) Temperature proximity for the "temperature reached" timer
 #define TEMP_HYSTERESIS 3      // (°C) Temperature proximity considered "close enough" to the target
 
@@ -537,9 +537,9 @@
     114.00, 114.00      \
   }
 #else
-#define DEFAULT_Kp 13.03
-#define DEFAULT_Ki 0.71
-#define DEFAULT_Kd 60.05
+#define DEFAULT_Kp 13.79
+#define DEFAULT_Ki 0.77
+#define DEFAULT_Kd 61.64
 #endif
 #endif // PIDTEMP
 
@@ -857,7 +857,7 @@
  */
 #define DEFAULT_MAX_ACCELERATION \
   {                              \
-    3000, 3000, 100, 10000       \
+    1500, 1500, 100, 5000       \
   }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
@@ -876,9 +876,9 @@
  *   M204 R    Retract Acceleration
  *   M204 T    Travel Acceleration
  */
-#define DEFAULT_ACCELERATION 3000         // X, Y, Z and E acceleration for printing moves
-#define DEFAULT_RETRACT_ACCELERATION 3000 // E acceleration for retracts
-#define DEFAULT_TRAVEL_ACCELERATION 3000  // X, Y, Z acceleration for travel (non printing) moves
+#define DEFAULT_ACCELERATION 1500         // X, Y, Z and E acceleration for printing moves
+#define DEFAULT_RETRACT_ACCELERATION 1500 // E acceleration for retracts
+#define DEFAULT_TRAVEL_ACCELERATION 1500  // X, Y, Z acceleration for travel (non printing) moves
 
 /**
  * Default Jerk limits (mm/s)
