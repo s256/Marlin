@@ -427,7 +427,7 @@
  *   998 : Dummy Table that ALWAYS reads 25°C or the temperature defined below.
  *   999 : Dummy Table that ALWAYS reads 100°C or the temperature defined below.
  */
-#define TEMP_SENSOR_0 1
+#define TEMP_SENSOR_0 11
 #define TEMP_SENSOR_1 0
 #define TEMP_SENSOR_2 0
 #define TEMP_SENSOR_3 0
@@ -1097,7 +1097,7 @@
  */
 #define NOZZLE_TO_PROBE_OFFSET \
   {                            \
-    -31, -5, -2.1              \
+    -31, -5, -2.55             \
   }
 
 // Most probes should stay away from the edges of the bed, but
@@ -1276,7 +1276,7 @@
 
 // The size of the printable area
 #define X_BED_SIZE 330
-#define Y_BED_SIZE 330
+#define Y_BED_SIZE 320
 
 // Travel limits (mm) after homing, corresponding to endstop positions.
 #define X_MIN_POS -5
@@ -1439,7 +1439,7 @@
  * these options to restore the prior leveling state or to always enable
  * leveling immediately after G28.
  */
-//#define RESTORE_LEVELING_AFTER_G28
+#define RESTORE_LEVELING_AFTER_G28
 //#define ENABLE_LEVELING_AFTER_G28
 
 /**
