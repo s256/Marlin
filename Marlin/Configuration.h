@@ -544,9 +544,9 @@
     114.00, 114.00      \
   }
 #else
-#define DEFAULT_Kp 10.59
-#define DEFAULT_Ki 0.71
-#define DEFAULT_Kd 39.47
+#define DEFAULT_Kp 14.78
+#define DEFAULT_Ki 1.19
+#define DEFAULT_Kd 45.70
 #endif
 #endif // PIDTEMP
 
@@ -1102,7 +1102,7 @@
  */
 #define NOZZLE_TO_PROBE_OFFSET \
   {                            \
-    35, 26, -1.3               \
+    35, 26, -0.55               \
   }
 
 // Most probes should stay away from the edges of the bed, but
@@ -1245,8 +1245,8 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
-#define INVERT_E1_DIR false
+#define INVERT_E0_DIR true
+#define INVERT_E1_DIR true
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
 #define INVERT_E4_DIR false
