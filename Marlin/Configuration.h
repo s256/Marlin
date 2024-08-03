@@ -835,7 +835,7 @@
  */
 #define DEFAULT_AXIS_STEPS_PER_UNIT \
   {                                 \
-    160, 160, 790, 200              \
+    160, 160, 790, 840              \
   }
 
 /**
@@ -864,14 +864,14 @@
  */
 #define DEFAULT_MAX_ACCELERATION \
   {                              \
-    9000, 5000, 50, 10000        \
+    9000, 5000, 50, 1200        \
   }
 
 //#define LIMITED_MAX_ACCEL_EDITING     // Limit edit via M201 or LCD to DEFAULT_MAX_ACCELERATION * 2
 #if ENABLED(LIMITED_MAX_ACCEL_EDITING)
 #define MAX_ACCEL_EDIT_VALUES \
   {                           \
-    6000, 6000, 200, 20000    \
+    6000, 6000, 200, 1500    \
   } // ...or, set your own edit limits
 #endif
 
@@ -1245,7 +1245,7 @@
 // @section extruder
 
 // For direct drive extruder v9 set to true, for geared extruder set to false.
-#define INVERT_E0_DIR false
+#define INVERT_E0_DIR true
 #define INVERT_E1_DIR true
 #define INVERT_E2_DIR false
 #define INVERT_E3_DIR false
